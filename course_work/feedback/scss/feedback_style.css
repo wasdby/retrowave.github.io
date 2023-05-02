@@ -3,10 +3,66 @@
   font-family: "Rubik", sans-serif;
 }
 
+@media (max-width: 850px) {
+  header#sa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2%;
+    box-sizing: border-box;
+  }
+  nav {
+    margin: auto;
+    flex-basis: 100%;
+    visibility: hidden;
+  }
+  nav .spisok li {
+    display: none;
+  }
+  nav .spisok li a {
+    display: none;
+  }
+  label#for_burger {
+    visibility: visible;
+    color: white;
+    font-size: min(15vw, 9vh);
+    cursor: pointer;
+  }
+  #burger:checked ~ nav .spisok {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    padding-left: 0;
+  }
+  #burger:checked ~ nav .spisok li {
+    display: flex;
+    justify-content: center;
+  }
+  #burger:checked ~ nav .spisok li a {
+    visibility: visible;
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    font-family: Rubik;
+  }
+  #burger:checked ~ nav .spisok li a:hover {
+    filter: opacity(0.5);
+    transform: scale(1.2);
+    transition: all 0.4s;
+  }
+  #burger:checked ~ nav .spisok li a .active {
+    transform: scale(1.2);
+  }
+  #burger:checked ~ nav .spisok li a {
+    transition: all 0.4s;
+  }
+}
 header {
   background-color: black;
   width: 100%;
-  height: 11vh;
   display: flex;
   justify-content: center;
 }
@@ -17,36 +73,46 @@ header .logo {
   align-items: center;
 }
 header .logo img {
-  height: 9vh;
+  height: min(15vw, 9vh);
+}
+header input {
+  display: none;
+}
+header label {
+  visibility: hidden;
 }
 header nav {
   width: 80%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-header nav ul {
+header nav .spisok {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-header nav ul .active {
+header nav .spisok .active {
   transform: scale(1.4);
 }
-header nav ul li {
+header nav .spisok li {
   display: inline;
 }
-header nav ul li a {
+header nav .spisok li a {
   text-decoration: none;
   color: white;
   font-size: 3vh;
-  font-family: "Rubik", sans-serif;
+  font-family: Rubik;
 }
-header nav ul li:hover {
+header nav .spisok li:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
   transition: all 0.4s;
 }
-header nav ul li {
+header nav .spisok li .active {
+  transform: scale(1.2);
+}
+header nav .spisok li {
   transition: all 0.4s;
 }
 
@@ -68,7 +134,7 @@ header nav ul li {
   color: black;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
-  font-size: 7vh;
+  font-size: min(12vw, 7vh);
 }
 .feedback .items {
   margin: 1vw;
@@ -106,11 +172,12 @@ header nav ul li {
   height: 4vh;
   font-size: 3vh;
   font-weight: bold;
+  width: 60%;
 }
 .feedback .items .right .item .feedback_text {
   height: 15vh;
   font-size: 2.5vh;
-  width: 100%;
+  width: 90%;
 }
 .feedback .items .right .item .button_place {
   width: 100%;
@@ -182,7 +249,6 @@ header nav ul li {
 footer {
   background-color: black;
   width: 100%;
-  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,11 +257,12 @@ footer {
 footer .links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 footer .links a img {
   display: flex;
   justify-content: left;
-  height: 8vh;
+  height: min(12vw, 8vh);
 }
 footer .links a:hover {
   filter: opacity(0.5);
@@ -209,7 +276,7 @@ footer .links .mail {
   justify-content: flex-start;
   text-decoration: none;
   color: white;
-  font-size: 2.5vw;
+  font-size: min(7vw, 3.5vh);
   font-weight: bold;
-  font-family: "Rubik", sans-serif;
+  font-family: Rubik;
 }/*# sourceMappingURL=feedback_style.css.map */
