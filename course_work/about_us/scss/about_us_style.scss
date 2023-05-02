@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    .logo{
+        width: 15%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img{
+            height: 9vh;
+        }
+    }
+    nav{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .active{
+                transform: scale(1.4);
+            }
+            li{
+                display: inline;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 3vh;
+                    font-family: Rubik;
+                }
+                &:hover {
+                    filter: opacity(0.5);
+                    transform: scale(1.2);
+                    transition: all 0.4s;
+                }
+                &{
+                    transition: all 0.4s;
+                }
+            } 
+        }
+    }
+}
+.about_us{
+    width: 100%;
+    background: url("../../about_us/data/img/background.png") ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .text{
+        width: 100%;
+        margin-top: 2vh;
+        margin-left: 2vh;
+        display: flex;
+        justify-content: start;
+        p{
+            color: black;
+            font-family: Rubik;
+            font-weight: bold;
+            font-size: 7vh;
+        }
+    }
+    .info{
+        margin: 1vw;
+        padding: 1vw;
+        width: 90%;
+        border: solid black 1vh;
+        border-radius: 40px;
+        background: white;
+        p{
+            text-indent: 2vw;
+            color: black;
+            font-family: Rubik;
+            font-weight: bold;
+            font-size: 3vh; 
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+    
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .links{
+        display: flex;
+        align-items: center;
+        a{
+            img{
+                display: flex;
+                justify-content: left;
+                height: 8vh;
+            }
+            &:hover {
+                filter: opacity(0.5);
+                transition: all 0.4s;
+            }
+            &{
+                transition: all 0.4s;
+            }
+        }
+        .mail{
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: white;
+            font-size: 2.5vw;
+            font-weight: bold;
+            font-family: Rubik;
+        }
+        
+    }
+}

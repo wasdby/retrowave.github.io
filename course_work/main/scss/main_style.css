@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 850px) {
+  header#sa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2%;
+    box-sizing: border-box;
+  }
+  nav {
+    margin: auto;
+    flex-basis: 100%;
+    visibility: hidden;
+  }
+  label#for_burger {
+    visibility: visible;
+    color: white;
+    font-size: 10vh;
+    cursor: pointer;
+  }
+  #burger:checked ~ nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+  }
+  #burger:checked ~ nav ul li {
+    display: flex;
+    justify-content: center;
+  }
+  #burger:checked ~ nav ul li a {
+    visibility: visible;
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    font-family: Rubik;
+  }
+  #burger:checked ~ nav ul li:hover {
+    filter: opacity(0.5);
+    transform: scale(1.2);
+    transition: all 0.4s;
+  }
+  #burger:checked ~ nav ul li .active {
+    transform: scale(1.2);
+  }
+  #burger:checked ~ nav ul li {
+    transition: all 0.4s;
+  }
+}
+header {
+  background-color: black;
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+}
+header .logo {
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header .logo img {
+  height: 9vh;
+}
+header input {
+  display: none;
+}
+header label {
+  visibility: hidden;
+}
+header nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul .active {
+  transform: scale(1.4);
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+  font-family: Rubik;
+}
+header nav ul li:hover {
+  filter: opacity(0.5);
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+header nav ul li .active {
+  transform: scale(1.2);
+}
+header nav ul li {
+  transition: all 0.4s;
+}
+
+.main_info {
+  width: 100%;
+  height: 100vh;
+  background: url("../../main/data/img/1969-dodge-charger-rt-440-01-1.jpg") no-repeat fixed top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.main_info .text {
+  margin-top: 15vh;
+  margin-left: 2vh;
+}
+.main_info .text .big_text {
+  width: 40vw;
+  color: white;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 7vh;
+}
+@media (max-width: 850px) {
+  .main_info .text .big_text {
+    width: 100%;
+  }
+}
+.main_info .text .big_text span {
+  color: #FFA800;
+}
+.main_info .text .small_text {
+  width: 35vw;
+  color: grey;
+  font-family: Rubik;
+  font-size: 3vh;
+}
+@media (max-width: 850px) {
+  .main_info .text .small_text {
+    width: 100%;
+  }
+}
+.main_info .button {
+  margin-top: 5vh;
+  margin-left: 2vh;
+}
+.main_info .button a {
+  width: 50vh;
+  height: 10vh;
+  border: 0.5vh solid white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: Rubik;
+  transition: all 0.4s;
+}
+@media (max-width: 850px) {
+  .main_info .button a {
+    width: 95%;
+  }
+}
+.main_info .button a:hover {
+  color: grey;
+  background: rgba(107, 107, 107, 0.2);
+  transition: all 0.4s;
+}
+
+.add_info {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.add_info .item {
+  width: 25vh;
+  margin: 1vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.add_info .item img {
+  width: 25vh;
+}
+.add_info .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add_info .text .fst {
+  width: 30vh;
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: Rubik;
+}
+.add_info .text .scnd {
+  width: 30vh;
+  font-size: 2.5vh;
+  font-family: Rubik;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+}
+footer .links a img {
+  display: flex;
+  justify-content: left;
+  height: 8vh;
+}
+footer .links a:hover {
+  filter: opacity(0.5);
+  transition: all 0.4s;
+}
+footer .links a {
+  transition: all 0.4s;
+}
+footer .links .mail {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  font-size: max(2.5vw, 3.5vh);
+  font-weight: bold;
+  font-family: Rubik;
+}/*# sourceMappingURL=main_style.css.map */

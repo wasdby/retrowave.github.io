@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+}
+header .logo {
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header .logo img {
+  height: 9vh;
+}
+header nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul .active {
+  transform: scale(1.4);
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+  font-family: Rubik;
+}
+header nav ul li:hover {
+  filter: opacity(0.5);
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+header nav ul li {
+  transition: all 0.4s;
+}
+
+.feedback {
+  width: 100%;
+  background: url("../../feedback/data/img/background.png");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feedback .text {
+  width: 100%;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  display: flex;
+  justify-content: start;
+}
+.feedback .text p {
+  color: black;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 7vh;
+}
+.feedback .items {
+  margin: 1vw;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.feedback .items u .left {
+  width: 20%;
+  height: 50vh;
+}
+.feedback .items .right {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback .items .right .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  margin: 1vw;
+  border: solid black 0.5vh;
+  border-radius: 20px;
+  background: white;
+}
+.feedback .items .right .item .profile {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.feedback .items .right .item .profile img {
+  width: 5vh;
+}
+.feedback .items .right .item .profile .name {
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: Rubik;
+}
+.feedback .items .right .item hr {
+  height: 0.1vh;
+  background: black;
+  margin: 1vw;
+}
+.feedback .items .right .item .text {
+  margin: 1vw;
+  font-size: 2.5vh;
+  font-family: Rubik;
+}
+.feedback .items .right .buttom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.feedback .items .right .buttom a {
+  width: 25vw;
+  height: 10vh;
+  border: 0.5vh solid black;
+  border-radius: 10px;
+  background: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: Rubik;
+}
+.feedback .items .right .buttom a:hover {
+  color: grey;
+  background: rgba(107, 107, 107, 0.2);
+  transition: all 0.4s;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+}
+footer .links a img {
+  display: flex;
+  justify-content: left;
+  height: 8vh;
+}
+footer .links a:hover {
+  filter: opacity(0.5);
+  transition: all 0.4s;
+}
+footer .links a {
+  transition: all 0.4s;
+}
+footer .links .mail {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5vw;
+  font-weight: bold;
+  font-family: Rubik;
+}/*# sourceMappingURL=feedback_style.css.map */

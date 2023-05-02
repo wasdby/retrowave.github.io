@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    .logo{
+        width: 15%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img{
+            height: 9vh;
+        }
+    }
+    nav{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around; 
+            .active{
+                transform: scale(1.4);
+            }
+            li{
+                display: inline;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 3vh;
+                    font-family: Rubik;
+                }
+                &:hover {
+                    filter: opacity(0.5);
+                    transform: scale(1.2);
+                    transition: all 0.4s;
+                }
+                &{
+                    transition: all 0.4s;
+                }
+            } 
+        }
+    }
+}
+.feedback{
+    width: 100%;
+    background: url("../../feedback/data/img/background.png") ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .text{
+        width: 100%;
+        margin-top: 2vh;
+        margin-left: 2vh;
+        display: flex;
+        justify-content: start;
+        p{
+            color: black;
+            font-family: Rubik;
+            font-weight: bold;
+            font-size: 7vh;
+        }
+    }
+    .items{
+        margin: 1vw;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;u
+        .left{
+            width: 20%;
+            height: 50vh;
+        }
+        .right{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            .item{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2vw;
+                margin: 1vw;
+                border: solid black 0.5vh;
+                border-radius: 20px;
+                background: white;
+                .profile{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    img{
+                        width: 5vh;
+                    }
+                    .name{
+                        font-size: 3vh;
+                    font-weight: bold;
+                    font-family: Rubik;
+                    };
+                    
+                }
+                hr{
+                    height: 0.1vh;
+                    background: black;
+                    margin: 1vw;
+                }
+                .text{
+                    margin: 1vw;
+                    font-size: 2.5vh;
+                    font-family: Rubik;
+                }
+            }
+            .buttom{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                a{
+                    width: 25vw;
+                    height: 10vh;
+                    border: 0.5vh solid black;
+                    border-radius: 10px;
+                    background: white;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    font-size: 3vh;
+                    font-weight: bold;
+                    font-family: Rubik;
+                }
+                a:hover{
+                    color: grey;
+                    background: rgba(107, 107, 107, 0.2);
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+    
+    
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .links{
+        display: flex;
+        align-items: center;
+        a{
+            img{
+                display: flex;
+                justify-content: left;
+                height: 8vh;
+            }
+            &:hover {
+                filter: opacity(0.5);
+                transition: all 0.4s;
+            }
+            &{
+                transition: all 0.4s;
+            }
+        }
+        .mail{
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: white;
+            font-size: 2.5vw;
+            font-weight: bold;
+            font-family: Rubik;
+        }
+        
+    }
+}
