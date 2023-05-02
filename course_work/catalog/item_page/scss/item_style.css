@@ -41,6 +41,12 @@
     justify-content: center;
   }
   #burger:checked ~ nav .spisok li a {
+    background: black;
+    border: solid white 0.5vh;
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 1vh;
+    width: 100%;
     visibility: visible;
     display: inline;
     text-decoration: none;
@@ -74,6 +80,7 @@ header .logo {
 }
 header .logo img {
   height: min(15vw, 9vh);
+  margin: 5px;
 }
 header input {
   display: none;
@@ -92,9 +99,6 @@ header nav .spisok {
   display: flex;
   justify-content: space-around;
 }
-header nav .spisok .active {
-  transform: scale(1.4);
-}
 header nav .spisok li {
   display: inline;
 }
@@ -108,9 +112,6 @@ header nav .spisok li:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
   transition: all 0.4s;
-}
-header nav .spisok li .active {
-  transform: scale(1.2);
 }
 header nav .spisok li {
   transition: all 0.4s;
@@ -127,8 +128,8 @@ section {
 }
 .car .info {
   margin: 1vw;
-  padding: 2vw;
-  width: 90%;
+  padding: 5vw;
+  width: 85%;
   border: solid black 1vh;
   border-radius: 40px;
   background: white;
@@ -140,7 +141,7 @@ section {
 .car .info img {
   border: solid black 0.4vh;
   border-radius: 10px;
-  width: max(40vw, 35vh);
+  width: min(85vw, 100vh);
 }
 .car .info .model {
   text-align: center;

@@ -40,6 +40,12 @@
             display: flex;
             justify-content: center;
             a{
+                background: black;
+                border: solid white 0.5vh;
+                border-radius: 10px;
+                padding: 1vh;
+                margin: 1vh;
+                width: 100%;
                 visibility: visible;
                 display: inline;
                 text-decoration: none;
@@ -73,6 +79,7 @@ header{
         align-items: center;
         img{
             height: min(15vw,9vh);
+            margin: 5px;
         }
     }
     input{
@@ -90,9 +97,6 @@ header{
             width: 100%;
             display: flex;
             justify-content: space-around;
-            .active{
-                transform: scale(1.4);
-            }
             li{
                 display: inline;
                 a{
@@ -106,9 +110,6 @@ header{
                     filter: opacity(0.5);
                     transform: scale(1.2);
                     transition: all 0.4s;
-                }
-                .active{
-                    transform: scale(1.2);
                 }
                 &{
                     transition: all 0.4s;
@@ -127,8 +128,8 @@ section{
     flex-direction: column;
     .info{
         margin: 1vw;
-        padding: 2vw;
-        width: 90%;
+        padding: 5vw;
+        width: 85%;
         border: solid black 1vh;
         border-radius: 40px;
         background: white;
@@ -139,7 +140,7 @@ section{
         img{
             border: solid black 0.4vh;
             border-radius: 10px;
-            width: max(40vw, 35vh);
+            width: min(85vw, 100vh);
         }
         .model{
             text-align: center;

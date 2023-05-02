@@ -45,6 +45,12 @@ html {
     justify-content: center;
   }
   #burger:checked ~ nav .spisok li a {
+    background: black;
+    border: solid white 0.5vh;
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 1vh;
+    width: 100%;
     visibility: visible;
     display: inline;
     text-decoration: none;
@@ -78,6 +84,7 @@ header .logo {
 }
 header .logo img {
   height: min(15vw, 9vh);
+  margin: 5px;
 }
 header input {
   display: none;
@@ -96,9 +103,6 @@ header nav .spisok {
   display: flex;
   justify-content: space-around;
 }
-header nav .spisok .active {
-  transform: scale(1.4);
-}
 header nav .spisok li {
   display: inline;
 }
@@ -112,9 +116,6 @@ header nav .spisok li:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
   transition: all 0.4s;
-}
-header nav .spisok li .active {
-  transform: scale(1.2);
 }
 header nav .spisok li {
   transition: all 0.4s;
@@ -153,6 +154,7 @@ header nav .spisok li {
   width: min(94vw, 50vh);
   height: 10vh;
   border: 0.5vh solid white;
+  border-radius: 10px;
   text-decoration: none;
   display: flex;
   justify-content: center;

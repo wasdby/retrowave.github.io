@@ -43,6 +43,12 @@ html{
             display: flex;
             justify-content: center;
             a{
+                background: black;
+                border: solid white 0.5vh;
+                border-radius: 10px;
+                padding: 1vh;
+                margin: 1vh;
+                width: 100%;
                 visibility: visible;
                 display: inline;
                 text-decoration: none;
@@ -76,6 +82,7 @@ header{
         align-items: center;
         img{
             height: min(15vw,9vh);
+            margin: 5px;
         }
     }
     input{
@@ -93,9 +100,6 @@ header{
             width: 100%;
             display: flex;
             justify-content: space-around;
-            .active{
-                transform: scale(1.4);
-            }
             li{
                 display: inline;
                 a{
@@ -109,9 +113,6 @@ header{
                     filter: opacity(0.5);
                     transform: scale(1.2);
                     transition: all 0.4s;
-                }
-                .active{
-                    transform: scale(1.2);
                 }
                 &{
                     transition: all 0.4s;
@@ -152,6 +153,7 @@ header{
             width: min(94vw,50vh);
             height: 10vh;
             border: 0.5vh solid white;
+            border-radius: 10px;
             text-decoration: none;
             display: flex;
             justify-content: center;
