@@ -49,6 +49,9 @@ header{
     }
 }
 
+section{
+    background: url("../data/img/background.png") fixed;
+}
 .car{
     display: flex;
     align-items: center;
@@ -61,10 +64,16 @@ header{
         border-radius: 40px;
         background: white;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         img{
-            height: 30vh;
+            border: solid black 0.4vh;
+            border-radius: 10px;
+            width: max(40vw, 35vh);
         }
         .model{
+            text-align: center;
             text-indent: 2vw;
             color: black;
             font-family: Rubik;
@@ -72,6 +81,7 @@ header{
             font-size: 5vh;
         }
         .price{
+            text-align: center;
             text-indent: 2vw;
             color: black;
             font-family: Rubik;
@@ -85,11 +95,15 @@ header{
         }
     }
     .form{
-        width: 100%;
+        width: 60vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: solid black 1vh;
+        border-radius: 40px;
+        background: white;
+        margin: 1vw;
         p{
             width: 50vw;
             display: flex;
@@ -101,16 +115,28 @@ header{
             margin: 1vw;
             input, select, option{
                 height: 5vh;
-                border: solid black 0.2vh;
+                border: solid black 0.4vh;
                 border-radius: 10px;
                 padding: 5px;
                 font-size: 4vh;
                 font-family: Rubik;
             }
-            select,input[type=button]{
+            select{
                 height: 7vh;
             }
+            input[type=button]{
+                height: 7vh;
+                background-color: #FFA800;
+            }
+            input[type=button]:hover{
+                background-color: #b87a00;
+                transition: all 0.4s;
+            }
             
+        }
+        .title{
+            font-size: 5vh;
+            text-align: center;
         }
         
     }

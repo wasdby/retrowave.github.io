@@ -24,8 +24,6 @@ for(let i = 0; i < len; i++){
 
     let text = document.createElement('p');
     text.innerHTML = item[3].innerHTML;
-
-    
     
     div.appendChild(profile);
     div.appendChild(line);

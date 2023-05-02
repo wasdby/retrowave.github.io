@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/item_style.css">
-    <title>Document</title>
+    <title>Подробнее</title>
 </head>
 <body>
     <header>
@@ -28,10 +28,13 @@
             <div class="info">
     
             </div>
-            <div class="form">
+            <form class="form" id = "form" name = "form">
+                <p class="title">
+                    Форма заказа
+                </p>
                 <p>
                     <label for="name">Имя</label>
-                    <input id = "name" type="text">
+                    <input id = "name" name= "name"type="text">
                 </p>
                 <p>
                     <label for="surname">Фамилия</label>
@@ -47,15 +50,18 @@
                 </p>
                 <p>
                     <label for="choice">Способ оплаты:</label>
-                    <select name="" id="choice">
+                    <select id="select" onchange="selectFunction()">
                         <option value="cash">Наличными</option>
                         <option value="card">Картой</option>
                     </select>
                 </p>
                 <p>
-                    <input type="button" value="Отправить">
+                    <input id = "button" type="button" value="Оформить заказ" onclick="buttonclick()">
                 </p>
-            </div>
+                <!-- <p class="output">
+
+                </p> -->
+            </form>
         </div>
     </section>
     

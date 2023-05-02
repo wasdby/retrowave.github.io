@@ -39,7 +39,7 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 3vh;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
 }
 header nav ul li:hover {
   filter: opacity(0.5);
@@ -52,7 +52,7 @@ header nav ul li {
 
 .feedback {
   width: 100%;
-  background: url("../../feedback/data/img/background.png");
+  background: url("../../feedback/data/img/background.png") fixed;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -66,7 +66,7 @@ header nav ul li {
 }
 .feedback .text p {
   color: black;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-weight: bold;
   font-size: 7vh;
 }
@@ -77,12 +77,12 @@ header nav ul li {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.feedback .items u .left {
+.feedback .items .left {
   width: 20%;
   height: 50vh;
 }
 .feedback .items .right {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -96,6 +96,40 @@ header nav ul li {
   border-radius: 20px;
   background: white;
 }
+.feedback .items .right .item textarea {
+  resize: none;
+  font-family: "Rubik", sans-serif;
+  border-radius: 10px;
+  padding: 1vh;
+}
+.feedback .items .right .item .user {
+  height: 4vh;
+  font-size: 3vh;
+  font-weight: bold;
+}
+.feedback .items .right .item .feedback_text {
+  height: 15vh;
+  font-size: 2.5vh;
+  width: 100%;
+}
+.feedback .items .right .item .button_place {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.feedback .items .right .item .button_place input {
+  margin-top: 2vh;
+  height: 5vh;
+  font-size: 3vh;
+  border: solid black 0.3vh;
+  border-radius: 10px;
+  background-color: #FFA800;
+  transition: all 0.4s;
+}
+.feedback .items .right .item .button_place input:hover {
+  background-color: #b87a00;
+  transition: all 0.4s;
+}
 .feedback .items .right .item .profile {
   display: flex;
   flex-wrap: nowrap;
@@ -107,7 +141,7 @@ header nav ul li {
 .feedback .items .right .item .profile .name {
   font-size: 3vh;
   font-weight: bold;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
 }
 .feedback .items .right .item hr {
   height: 0.1vh;
@@ -117,7 +151,7 @@ header nav ul li {
 .feedback .items .right .item .text {
   margin: 1vw;
   font-size: 2.5vh;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
 }
 .feedback .items .right .buttom {
   width: 100%;
@@ -137,7 +171,7 @@ header nav ul li {
   color: black;
   font-size: 3vh;
   font-weight: bold;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
 }
 .feedback .items .right .buttom a:hover {
   color: grey;
@@ -177,5 +211,5 @@ footer .links .mail {
   color: white;
   font-size: 2.5vw;
   font-weight: bold;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
 }/*# sourceMappingURL=feedback_style.css.map */

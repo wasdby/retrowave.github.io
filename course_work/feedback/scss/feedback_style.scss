@@ -34,7 +34,7 @@ header{
                     text-decoration: none;
                     color: white;
                     font-size: 3vh;
-                    font-family: Rubik;
+                    font-family: 'Rubik', sans-serif;
                 }
                 &:hover {
                     filter: opacity(0.5);
@@ -50,7 +50,7 @@ header{
 }
 .feedback{
     width: 100%;
-    background: url("../../feedback/data/img/background.png") ;
+    background: url("../../feedback/data/img/background.png") fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,7 +62,7 @@ header{
         justify-content: start;
         p{
             color: black;
-            font-family: Rubik;
+            font-family: 'Rubik', sans-serif;
             font-weight: bold;
             font-size: 7vh;
         }
@@ -72,13 +72,13 @@ header{
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;u
+        justify-content: space-between;
         .left{
             width: 20%;
             height: 50vh;
         }
         .right{
-            width: 80%;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             .item{
@@ -90,6 +90,40 @@ header{
                 border: solid black 0.5vh;
                 border-radius: 20px;
                 background: white;
+                textarea{
+                    resize: none;
+                    font-family: 'Rubik', sans-serif;
+                    border-radius: 10px ;
+                    padding: 1vh;
+                }
+                .user{
+                    height: 4vh;
+                    font-size: 3vh;
+                    font-weight: bold;
+                }
+                .feedback_text{
+                    height: 15vh;
+                    font-size: 2.5vh;
+                    width: 100%;
+                }
+                .button_place{
+                    width:100%;
+                    display: flex;
+                    justify-content: end;
+                    input{
+                        margin-top: 2vh;
+                        height: 5vh;
+                        font-size: 3vh;
+                        border: solid black 0.3vh;
+                        border-radius: 10px;
+                        background-color: #FFA800;
+                        transition: all 0.4s;
+                    }
+                    input:hover{
+                        background-color: #b87a00;
+                        transition: all 0.4s;
+                    }
+                }
                 .profile{
                     display: flex;
                     flex-wrap: nowrap;
@@ -98,9 +132,9 @@ header{
                         width: 5vh;
                     }
                     .name{
-                        font-size: 3vh;
+                    font-size: 3vh;
                     font-weight: bold;
-                    font-family: Rubik;
+                    font-family: 'Rubik', sans-serif;
                     };
                     
                 }
@@ -112,7 +146,7 @@ header{
                 .text{
                     margin: 1vw;
                     font-size: 2.5vh;
-                    font-family: Rubik;
+                    font-family: 'Rubik', sans-serif;
                 }
             }
             .buttom{
@@ -132,7 +166,7 @@ header{
                     color: black;
                     font-size: 3vh;
                     font-weight: bold;
-                    font-family: Rubik;
+                    font-family: 'Rubik', sans-serif;
                 }
                 a:hover{
                     color: grey;
@@ -177,7 +211,7 @@ footer{
             color: white;
             font-size: 2.5vw;
             font-weight: bold;
-            font-family: Rubik;
+            font-family: 'Rubik', sans-serif;
         }
         
     }

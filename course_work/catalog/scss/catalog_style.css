@@ -95,13 +95,16 @@ header nav ul li {
   font-size: 3vh;
 }
 .catalog .items .item button {
+  align-self: center;
   margin-top: 5vh;
   height: 5vh;
-  width: 100%;
+  width: 95%;
   border: none;
   background-color: #FFA800;
   font-size: 3vh;
   transition: all 0.4s;
+  border: solid black 0.5vh;
+  border-radius: 10px;
 }
 .catalog .items .item button:hover {
   background-color: #b87a00;

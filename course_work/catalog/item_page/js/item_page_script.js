@@ -34,3 +34,18 @@ model.className = 'model';
 price.className = 'price';
 add.className = 'add';
 
+
+function buttonclick() {
+let form = document.forms[0];
+let name = form.elements.name.value;
+let surname = form.elements.surname.value;
+let mail = form.elements.mail.value;
+let comment = form.elements.comment.value;
+
+var select = document.getElementById('select');
+
+str = name+ "\n" +surname + "\n" + mail + "\n" + comment + "\n";
+
+alert(str);
+
+}

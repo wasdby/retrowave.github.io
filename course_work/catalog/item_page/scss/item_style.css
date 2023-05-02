@@ -50,6 +50,10 @@ header nav ul li {
   transition: all 0.4s;
 }
 
+section {
+  background: url("../data/img/background.png") fixed;
+}
+
 .car {
   display: flex;
   align-items: center;
@@ -63,11 +67,17 @@ header nav ul li {
   border-radius: 40px;
   background: white;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .car .info img {
-  height: 30vh;
+  border: solid black 0.4vh;
+  border-radius: 10px;
+  width: max(40vw, 35vh);
 }
 .car .info .model {
+  text-align: center;
   text-indent: 2vw;
   color: black;
   font-family: Rubik;
@@ -75,6 +85,7 @@ header nav ul li {
   font-size: 5vh;
 }
 .car .info .price {
+  text-align: center;
   text-indent: 2vw;
   color: black;
   font-family: Rubik;
@@ -87,11 +98,15 @@ header nav ul li {
   font-size: 3vh;
 }
 .car .form {
-  width: 100%;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid black 1vh;
+  border-radius: 40px;
+  background: white;
+  margin: 1vw;
 }
 .car .form p {
   width: 50vw;
@@ -105,14 +120,26 @@ header nav ul li {
 }
 .car .form p input, .car .form p select, .car .form p option {
   height: 5vh;
-  border: solid black 0.2vh;
+  border: solid black 0.4vh;
   border-radius: 10px;
   padding: 5px;
   font-size: 4vh;
   font-family: Rubik;
 }
-.car .form p select, .car .form p input[type=button] {
+.car .form p select {
   height: 7vh;
+}
+.car .form p input[type=button] {
+  height: 7vh;
+  background-color: #FFA800;
+}
+.car .form p input[type=button]:hover {
+  background-color: #b87a00;
+  transition: all 0.4s;
+}
+.car .form .title {
+  font-size: 5vh;
+  text-align: center;
 }
 
 footer {
