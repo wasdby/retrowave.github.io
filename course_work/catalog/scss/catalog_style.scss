@@ -54,11 +54,7 @@
                 font-family: Rubik;
             &:hover {
                 filter: opacity(0.5);
-                transform: scale(1.2);
                 transition: all 0.4s;
-            }
-            .active{
-                transform: scale(1.2);
             }
             &{
                 transition: all 0.4s;
@@ -108,7 +104,6 @@ header{
                 
                 &:hover {
                     filter: opacity(0.5);
-                    transform: scale(1.2);
                     transition: all 0.4s;
                 }
                 &{

@@ -68,6 +68,7 @@ function buttonclick(){
 
         let catalog_items = document.body.getElementsByClassName('right')[0];
         catalog_items.append(div);
+        document.location = "#footer";
     }
 
     
