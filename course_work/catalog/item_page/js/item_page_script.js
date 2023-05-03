@@ -2,7 +2,7 @@ str = window.location + "0"
 str = str.slice(58,-1);
 
 let xmlhttp = new XMLHttpRequest;
-xmlhttp.open("GET", "../../catalog/xml/catalog_data.xml", false);
+xmlhttp.open("GET", "../../course_work/catalog/xml/catalog_data.xml", false);
 xmlhttp.send();
 let xmlDoc = xmlhttp.responseXML;
 
