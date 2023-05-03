@@ -48,7 +48,8 @@ function buttonclick(){
 
     if(!feedback_text.value || !user){
         alert("Заполните все поля.")
-    }else{
+    }
+    else{
         let div = document.createElement('div');
         let line = document.createElement('hr');
         let img = document.createElement('img');
@@ -70,7 +71,5 @@ function buttonclick(){
         catalog_items.append(div);
         document.location = "#footer";
     }
-
-    
 }
 

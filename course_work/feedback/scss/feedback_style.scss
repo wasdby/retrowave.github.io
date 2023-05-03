@@ -1,4 +1,4 @@
-*{
+*{    
     margin: 0;
     font-family: 'Rubik', sans-serif;
 }
@@ -54,7 +54,6 @@ html{
                 text-decoration: none;
                 color: white;
                 font-size: 3vh;
-                font-family: Rubik;
             &:hover {
                 filter: opacity(0.5);
                 transition: all 0.4s;
@@ -103,7 +102,7 @@ header{
                     text-decoration: none;
                     color: white;
                     font-size: 3vh;
-                    font-family: Rubik;
+
                 }
                 
                 &:hover {
@@ -131,7 +130,6 @@ header{
         justify-content: start;
         p{
             color: black;
-            font-family: 'Rubik', sans-serif;
             font-weight: bold;
             font-size: min(12vw,7vh);
         }
@@ -160,8 +158,7 @@ header{
                 border-radius: 20px;
                 background: white;
                 textarea{
-                    resize: none;
-                    font-family: 'Rubik', sans-serif;
+                    resize: none;        
                     border-radius: 10px ;
                     padding: 1vh;
                 }
@@ -204,7 +201,6 @@ header{
                     .name{
                     font-size: 3vh;
                     font-weight: bold;
-                    font-family: 'Rubik', sans-serif;
                     };
                     
                 }
@@ -216,7 +212,6 @@ header{
                 .text{
                     margin: 1vw;
                     font-size: 2.5vh;
-                    font-family: 'Rubik', sans-serif;
                 }
             }
             .buttom{
@@ -236,7 +231,6 @@ header{
                     color: black;
                     font-size: 3vh;
                     font-weight: bold;
-                    font-family: 'Rubik', sans-serif;
                 }
                 a:hover{
                     color: grey;
@@ -281,7 +275,6 @@ footer{
             color: white;
             font-size: min(7vw,3.5vh);
             font-weight: bold;
-            font-family: Rubik;
         }
         
     }

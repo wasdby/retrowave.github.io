@@ -51,7 +51,6 @@
                 text-decoration: none;
                 color: white;
                 font-size: 3vh;
-                font-family: Rubik;
             &:hover {
                 filter: opacity(0.5);
                 transition: all 0.4s;
@@ -99,7 +98,7 @@ header{
                     text-decoration: none;
                     color: white;
                     font-size: 3vh;
-                    font-family: Rubik;
+
                 }
                 
                 &:hover {
@@ -126,7 +125,6 @@ header{
         justify-content: start;
         p{
             color: white;
-            font-family: Rubik;
             font-weight: bold;
             font-size: min(12vw,7vh);
         }
@@ -214,8 +212,7 @@ footer{
             text-decoration: none;
             color: white;
             font-size: min(7vw,3.5vh);
-            font-weight: bold;
-            font-family: Rubik;
+            font-weight: bold
         }
         
     }

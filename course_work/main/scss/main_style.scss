@@ -54,7 +54,6 @@ html{
                 text-decoration: none;
                 color: white;
                 font-size: 3vh;
-                font-family: Rubik;
             &:hover {
                 filter: opacity(0.5);
 
@@ -103,7 +102,6 @@ header{
                     text-decoration: none;
                     color: white;
                     font-size: 3vh;
-                    font-family: Rubik;
                 }
                 
                 &:hover {
@@ -131,7 +129,6 @@ header{
 
         .big_text{
             color: white;
-            font-family: Rubik;
             font-weight: bold;
             font-size: min(10vw,7vh);
             span{
@@ -140,7 +137,6 @@ header{
         }
         .small_text{
             color: grey;
-            font-family: Rubik;
             font-size: min(5vw,3vh);
         }
     }
@@ -158,7 +154,6 @@ header{
             color: white;
             font-size: 3vh;
             font-weight: bold;
-            font-family: Rubik;
             transition: all 0.4s;
         }
         a:hover{
@@ -196,12 +191,10 @@ header{
             width: 25vh;
             font-size: 3vh;
             font-weight: bold;
-            font-family: Rubik;
         }
         .scnd{
             width: 25vh;
             font-size: 2.5vh;
-            font-family: Rubik;
         }
     }
 }
@@ -237,7 +230,6 @@ footer{
             color: white;
             font-size: min(7vw,3.5vh);
             font-weight: bold;
-            font-family: Rubik;
         }
         
     }

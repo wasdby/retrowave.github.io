@@ -31,6 +31,4 @@ for(let i = 0; i < len; i++){
     
     let catalog_items = document.body.getElementsByClassName('items')[0];
     catalog_items.append(div);
-
-    
 }
