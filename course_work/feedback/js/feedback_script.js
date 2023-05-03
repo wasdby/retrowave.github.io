@@ -37,3 +37,39 @@ for(let i = 0; i < len; i++){
     catalog_items.append(div);
     
 }
+function buttonclick(){
+    let user = document.body.getElementsByClassName('user')[0];
+    let user_to_html = document.createElement('p');
+    user_to_html.innerHTML = user.value;  
+
+    let feedback_text = document.getElementsByClassName('feedback_text')[0];
+    let feedback_text_to_html = document.createElement('p');
+    feedback_text_to_html.innerHTML = feedback_text.value;
+
+    if(!feedback_text.value || !user){
+        alert("Заполните все поля.")
+    }else{
+        let div = document.createElement('div');
+        let line = document.createElement('hr');
+        let img = document.createElement('img');
+        img.src = "../feedback/data/img/user.svg";
+        let profile = document.createElement('div');
+        profile.className = 'profile';
+
+        profile.appendChild(img);
+        profile.appendChild(user_to_html);
+        div.appendChild(profile);
+        div.appendChild(line);
+        div.appendChild(feedback_text_to_html);
+        
+        user_to_html.className = 'name';
+        feedback_text_to_html.className = 'text'
+        div.className = 'item';
+
+        let catalog_items = document.body.getElementsByClassName('right')[0];
+        catalog_items.append(div);
+    }
+
+    
+}
+
