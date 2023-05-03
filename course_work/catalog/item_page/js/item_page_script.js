@@ -1,6 +1,5 @@
 str = window.location + "0"
 str = str.slice(73,-1);
-alert(str);
 
 let xmlhttp = new XMLHttpRequest;
 xmlhttp.open("GET", "../item_page/xml/catalog_data.xml", false);
