@@ -52,7 +52,6 @@
     text-decoration: none;
     color: white;
     font-size: 3vh;
-    font-family: Rubik;
   }
   #burger:checked ~ nav .spisok li a:hover {
     filter: opacity(0.5);
@@ -102,7 +101,6 @@ header nav .spisok li a {
   text-decoration: none;
   color: white;
   font-size: 3vh;
-  font-family: Rubik;
 }
 header nav .spisok li:hover {
   filter: opacity(0.5);
@@ -112,14 +110,11 @@ header nav .spisok li {
   transition: all 0.4s;
 }
 
-section {
-  background: url("../data/img/background.png") fixed;
-}
-
 .car {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: url("../data/img/background.png") fixed;
 }
 .car .info {
   margin: 1vw;
@@ -142,7 +137,6 @@ section {
   text-align: center;
   text-indent: 2vw;
   color: black;
-  font-family: Rubik;
   font-weight: bold;
   font-size: 5vh;
 }
@@ -150,13 +144,11 @@ section {
   text-align: center;
   text-indent: 2vw;
   color: black;
-  font-family: Rubik;
   font-size: 5vh;
 }
 .car .info .add {
   text-indent: 2vw;
   color: black;
-  font-family: Rubik;
   font-size: 3vh;
 }
 .car .form {
@@ -176,7 +168,6 @@ section {
   display: flex;
   flex-direction: column;
   color: black;
-  font-family: Rubik;
   font-weight: bold;
   font-size: 4vh;
   margin: 1vw;
@@ -187,7 +178,6 @@ section {
   border-radius: 10px;
   padding: 5px;
   font-size: 4vh;
-  font-family: Rubik;
 }
 .car .form p select {
   height: 7vh;
@@ -237,5 +227,4 @@ footer .links .mail {
   color: white;
   font-size: min(7vw, 3.5vh);
   font-weight: bold;
-  font-family: Rubik;
 }/*# sourceMappingURL=item_style.css.map */
