@@ -1,5 +1,5 @@
 str = window.location + "0"
-str = str.slice(58,-1);
+str = str.slice(73,-1);
 alert(str);
 
 let xmlhttp = new XMLHttpRequest;
