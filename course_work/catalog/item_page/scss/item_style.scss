@@ -116,10 +116,10 @@ header{
     }
 }
 .car{
+    background: url("../data/img/background.png") fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: url("../data/img/background.png") fixed;
     .info{
         margin: 1vw;
         padding: 5vw;

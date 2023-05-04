@@ -9,16 +9,26 @@ html {
 
 @media (max-width: 850px) {
   header#sa {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 2%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   nav {
     margin: auto;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     visibility: hidden;
   }
   nav .spisok li {
@@ -34,15 +44,26 @@ html {
     cursor: pointer;
   }
   #burger:checked ~ nav .spisok {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 100%;
     padding-left: 0;
   }
   #burger:checked ~ nav .spisok li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #burger:checked ~ nav .spisok li a {
     background: black;
@@ -56,27 +77,39 @@ html {
     text-decoration: none;
     color: white;
     font-size: 3vh;
-    font-family: Rubik;
   }
   #burger:checked ~ nav .spisok li a:hover {
-    filter: opacity(0.5);
+    -webkit-filter: opacity(0.5);
+            filter: opacity(0.5);
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
   #burger:checked ~ nav .spisok li a {
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
 }
 header {
   background-color: black;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header .logo {
   width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .logo img {
   height: min(15vw, 9vh);
@@ -90,14 +123,23 @@ header label {
 }
 header nav {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header nav .spisok {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 header nav .spisok li {
   display: inline;
@@ -106,13 +148,15 @@ header nav .spisok li a {
   text-decoration: none;
   color: white;
   font-size: 3vh;
-  font-family: Rubik;
 }
 header nav .spisok li:hover {
-  filter: opacity(0.5);
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 header nav .spisok li {
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -121,16 +165,22 @@ header nav .spisok li {
   height: min(200vw, 100vh);
   background: url("../../main/data/img/1969-dodge-charger-rt-440-01-1.jpg") no-repeat fixed top;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .main_info .text {
   margin: 2vh;
 }
 .main_info .text .big_text {
   color: white;
-  font-family: Rubik;
   font-weight: bold;
   font-size: min(10vw, 7vh);
 }
@@ -139,7 +189,6 @@ header nav .spisok li {
 }
 .main_info .text .small_text {
   color: grey;
-  font-family: Rubik;
   font-size: min(5vw, 3vh);
 }
 .main_info .button {
@@ -151,18 +200,25 @@ header nav .spisok li {
   border: 0.5vh solid white;
   border-radius: 10px;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-size: 3vh;
   font-weight: bold;
-  font-family: Rubik;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 .main_info .button a:hover {
   color: grey;
   background: rgba(107, 107, 107, 0.2);
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -171,70 +227,111 @@ header nav .spisok li {
   margin-bottom: 5vh;
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .add_info .item {
   width: 30vh;
   margin: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .add_info .item img {
   width: 25vh;
 }
 .add_info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .add_info .text .fst {
   width: 25vh;
   font-size: 3vh;
   font-weight: bold;
-  font-family: Rubik;
 }
 .add_info .text .scnd {
   width: 25vh;
   font-size: 2.5vh;
-  font-family: Rubik;
 }
 
 footer {
   background-color: black;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 footer .links a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   height: min(12vw, 8vh);
 }
 footer .links a:hover {
-  filter: opacity(0.5);
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 footer .links a {
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 footer .links .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-decoration: none;
   color: white;
   font-size: min(7vw, 3.5vh);
   font-weight: bold;
-  font-family: Rubik;
-}/*# sourceMappingURL=main_style.css.map */
+}
